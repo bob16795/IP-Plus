@@ -1,6 +1,6 @@
 {
-  "name": "A creative mode mod",
-  "description": "Creative mode made EZ",
+  "name": "Plus Mode",
+  "description": "Plus mode reimplemented",
   "main_file": "main.py",
   "ui_file": "ui.json",
   "requires": [],
