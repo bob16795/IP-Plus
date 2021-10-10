@@ -1,6 +1,8 @@
 {
   "version": "0.0.0",
-  "git_requires": [],
+  "git_requires": [
+    "github.com/prestosilver/IP-BaseMods"
+  ],
   "contents": [
     {
       "path": "PlusMode",
