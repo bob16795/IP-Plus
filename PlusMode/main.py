@@ -23,7 +23,8 @@ class Data:
     def update(self):
         if self.selected >= len(self.mods): self.id = 0
         elif self.selected < 0: self.selected = len(self.mods) - 1
-        self.selectedModule = self.mods[self.selected]
+        if self.mods[self.selected] == "Plus Mode": self.selectedModule = "Slider"
+        else: self.selectedModule = self.mods[self.selected]
 
 def onLoad():
     """
