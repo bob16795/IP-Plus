@@ -2,15 +2,15 @@
   "buttons": [
     {
       "x": 5,
-      "y": 3,
+      "y": -3,
       "w": 25,
       "h": 25,
       "onClick": "prevClick",
       "enable": "enaTrue"
     },
     {
-      "x": 124,
-      "y": 3,
+      "x": 224,
+      "y": -3,
       "w": 25,
       "h": 25,
       "onClick": "nextClick",
@@ -28,14 +28,14 @@
     },
     {
       "x": 5,
-      "y": 3,
+      "y": -3,
       "w": 25,
       "h": 25,
       "static_text": "<"
     },
     {
-      "x": 124,
-      "y": 3,
+      "x": 224,
+      "y": -3,
       "w": 25,
       "h": 25,
       "static_text": ">"

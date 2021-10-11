@@ -21,8 +21,8 @@ class Data:
         self.selectedModule = self.mods[0]
 
     def update(self):
-        if self.selected > len(self.mods): self.id = 0
-        elif self.selected < 0: self.selected = len(self.mods)
+        if self.selected >= len(self.mods): self.id = 0
+        elif self.selected < 0: self.selected = len(self.mods) - 1
         self.selectedModule = self.mods[self.selected]
 
 def onLoad():
