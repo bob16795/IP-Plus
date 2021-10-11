@@ -17,12 +17,13 @@ class Data:
         """
         self.mods = GameController.GetModList()
         self.id = id
+        self.selected = 0
         self.selectedModule = self.mods[0]
 
     def update(self):
-        if self.id > len(self.mods): self.id = 0
-        elif self.id < 0: self.id = len(self.mods)
-        self.selectedModule = self.mods[self.id]
+        if self.selected > len(self.mods): self.id = 0
+        elif self.selected < 0: self.selected = len(self.mods)
+        self.selectedModule = self.mods[self.selected]
 
 def onLoad():
     """
