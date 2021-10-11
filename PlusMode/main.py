@@ -17,6 +17,7 @@ class Data:
         """
         self.mods = GameController.GetModList()
         self.id = id
+        self.selectedModule = self.mods[0]
 
     def update(self):
         if self.id > len(self.mods): self.id = 0
