@@ -138,4 +138,6 @@ def prevClick(data):
     data.update()
     return data
 
+def okClick(data): return data
+
 def enaTrue(data): return True

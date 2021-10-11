@@ -9,11 +9,19 @@
       "enable": "enaTrue"
     },
     {
-      "x": 224,
+      "x": 240,
       "y": -3,
       "w": 25,
       "h": 25,
       "onClick": "nextClick",
+      "enable": "enaTrue"
+    },
+    {
+      "x": 210,
+      "y": -3,
+      "w": 25,
+      "h": 25,
+      "onClick": "okClick",
       "enable": "enaTrue"
     }
   ],
@@ -22,7 +30,7 @@
     {
       "x": 30,
       "y": 0,
-      "w": 199,
+      "w": 180,
       "h": 30,
       "dynamic_text": "selectedModule"
     },
@@ -34,11 +42,18 @@
       "static_text": "<"
     },
     {
-      "x": 224,
+      "x": 210,
       "y": -3,
       "w": 25,
       "h": 25,
       "static_text": ">"
+    },
+    {
+      "x": 240,
+      "y": -3,
+      "w": 25,
+      "h": 25,
+      "static_text": "K"
     }
   ]
 }
