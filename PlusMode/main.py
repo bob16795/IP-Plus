@@ -15,7 +15,11 @@ class Data:
         Parameters:
             id (int): the id
         """
-        self.mods = GameController.GetModList()
+        mods = GameController.GetModList()
+        self.mods = ["Slider"]
+        for m in mods:
+            if GameController.GetChance(m) != 0 and m != "Plus Mode":
+                self.mods += [m]
         self.id = id
         self.selected = 0
         self.selectedModule = self.mods[0]
@@ -23,7 +27,6 @@ class Data:
     def update(self):
         if self.selected >= len(self.mods): self.id = 0
         elif self.selected < 0: self.selected = len(self.mods) - 1
-        if self.mods[self.selected] == "Plus Mode": self.selectedModule = "Slider"
         else: self.selectedModule = self.mods[self.selected]
 
 def onLoad():
