@@ -130,7 +130,7 @@ def saveData(data):
     return result
 
 def nextClick(data):
-    data.selected -= 1
+    data.selected += 1
     data.update()
     return data
 
