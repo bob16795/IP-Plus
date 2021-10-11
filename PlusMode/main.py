@@ -15,7 +15,13 @@ class Data:
         Parameters:
             id (int): the id
         """
+        self.mods = GameController.GetModList()
         self.id = id
+
+    def update(self):
+        if self.id > len(self.mods): self.id = 0
+        elif self.id < 0: self.id = len(self.mods)
+        self.selectedModule = self.mods[self.id]
 
 def onLoad():
     """
@@ -40,6 +46,7 @@ def createModule(id):
         data: the new data variable
     """
     data.result = "Created Template"
+    GameController.SetChance(-1)
     return data
 
 def tick(data):
@@ -117,3 +124,15 @@ def saveData(data):
     """
     result = ""
     return result
+
+def nextClick(data):
+    data.selected -= 1
+    data.update()
+    return data
+
+def prevClick(data):
+    data.selected -= 1
+    data.update()
+    return data
+
+def enaTrue(data): return True

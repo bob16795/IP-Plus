@@ -1,13 +1,44 @@
 {
-  "buttons": [],
+  "buttons": [
+    {
+      "x": 5,
+      "y": 3,
+      "w": 25,
+      "h": 25,
+      "onClick": "prevClick",
+      "enable": "enaTrue"
+    },
+    {
+      "x": 124,
+      "y": 3,
+      "w": 25,
+      "h": 25,
+      "onClick": "nextClick",
+      "enable": "enaTrue"
+    }
+  ],
   "sliders": [],
   "text": [
     {
-      "x": 0,
+      "x": 30,
       "y": 0,
-      "w": 269,
+      "w": 199,
       "h": 30,
-      "static_text": "Template"
+      "dynamic_text": "selectedModule"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "w": 25,
+      "h": 25,
+      "static_text": "<"
+    },
+    {
+      "x": 124,
+      "y": 3,
+      "w": 25,
+      "h": 25,
+      "static_text": ">"
     }
   ]
 }
