@@ -45,8 +45,9 @@ def createModule(id):
     Returns:
         data: the new data variable
     """
+    data = Data(id)
     data.result = "Created Template"
-    GameController.SetChance(-1)
+    GameController.SetChance("Plus Mode", -1)
     return data
 
 def tick(data):
