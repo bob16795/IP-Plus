@@ -144,4 +144,5 @@ def prevClick(data):
 
 def okClick(data): return data
 
-def enaTrue(data): return True
+def enaTrue(data):
+    GameController.SwapType(data.id, data.selectedModule)
